@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <head>
 <title>Portfolio</title>
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="components.css">
+<script src="script.js"></script>
 </head>
 <body>
     <header>
@@ -23,6 +26,21 @@
         <li><a href="https://github.com/AndreaJulia24" target="_blank">GitHub profil</a></li>
     </ul>
 </aside>
+
+<button onclick="incrementCounter()">Növelés</button>
+<p id="counter">0</p>
+
+<button onclick="askName()">Kérdezd meg a nevét</button>
+<p id="name"></p>
+
+<button onclick="startCountdown()">Indítsd el</button>
+<p id="countdown">10</p>
+
+<ul id="fruitList"></ul>
+
+<ul id="personInfo"></ul>
+
+<button onclick="changeBg()">Háttér váltás</button>
 
 <footer>
     <p>Kapcsolat: andreaczellecz1234@gmail.com</p>

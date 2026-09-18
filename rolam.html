@@ -1,6 +1,19 @@
 <!DOCTYPE html>
 <head>
 <title>Portfolio-Rólam</title>
+<link rel="stylesheet" href="base.css">
+<link rel="stylesheet" href="components.css">
+<style>
+   header {
+            background-color: #e8eef8;
+            padding: 10px;
+        }
+
+    footer {
+            text-align: center;
+            font-size: 14px;
+        }
+</style>
 </head>
 <body>
     <header>
@@ -18,11 +31,19 @@
 
 <section id="rolam">
     <h1>Rólam</h1>
-    <img src="assets/images/profile.png" alt="Profile image of me" width="150">
-    <h2>Bemutatkozás</h2>
-    <p>Czellecz Andrea-Julia vagyok, 22 éves, az UMFST informatikai karán tanulok.</p>
-    <h2>Érdeklődési körök</h2>
-    <p>Érdeklődési köröm a programozás, kiberbiztonság és web-mobil appfejlesztés.</p>
+    <img src="assets/images/profile.png" alt="Profile image of me" class="avatar">
+    <div class="container">
+        <div>
+            <h2>Bemutatkozás</h2>
+            <p>Czellecz Andrea-Julia vagyok, 22 éves, az UMFST informatikai karán tanulok.</p>
+        </div>
+        <div>
+            <h2>Érdeklődési körök</h2>
+            <p><span style="color: #4f0f66; font-weight: bold;">Érdeklődési köröm a programozás, kiberbiztonság és web-mobil appfejlesztés.</span>
+                <span style="color: #4f0f66; font-weight: bold;">Szeretek új technológiákat felfedezni és kreatív projekteken dolgozni.</span>
+            </p>
+        </div>
+    </div>
     <h2>Képességek</h2>
     <ul>
         <li>HTML</li>
