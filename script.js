@@ -107,6 +107,6 @@ window.onload = function() {
   // 10. Időzítő üdvözlő üzenet (5 másodperc múlva)
   setTimeout(function() {
     alert("Üdvözöllek az oldalon!");
-    console.log("10. Feladat - Üdvözlő üzenet megjelent (5 mp után).");
-  }, 5000);
+    console.log("10. Feladat - Üdvözlő üzenet megjelent (1 mp után).");
+  }, 1000);
 };
