@@ -1,62 +1,87 @@
 <!DOCTYPE html>
+<html lang="hu">
 <head>
-<title>Portfolio-Rólam</title>
-<link rel="stylesheet" href="base.css">
-<link rel="stylesheet" href="components.css">
-<style>
-   header {
-            background-color: #e8eef8;
-            padding: 10px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Rólam</title>
+    <!-- Külső stíluslapok -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="components.css">
+
+    <!-- CSS 13. feladat: 2 belső (internal) stílusszabály -->
+    <style>
+        /* 1. belső stílus: a bemutatkozó szekció kiemelése */
+        .about-header {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+            margin-bottom: 28px;
+            padding-bottom: 24px;
+            border-bottom: 1px solid #eef2f6;
         }
 
-    footer {
-            text-align: center;
-            font-size: 14px;
+        /* 2. belső stílus: a készségek elemeinek finom lebegése */
+        .skills-list li:hover {
+            border-color: royalblue;
+            color: royalblue;
         }
-</style>
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <a href="index.html">Főoldal</a>
-                <a href="rolam.html">Rólam</a>
-                <a href="projektek.html">Projektek</a>
-                <a href="kapcsolat.html">Kapcsolat</a>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="rolam.html" class="active">Rólam</a></li>
+                <li><a href="projektek.html">Projektek</a></li>
+                <li><a href="gyakorlatok.html">JS Gyakorlatok</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
             </ul>
         </nav>
     </header>
 
-<p><a href="index.html">&larr; Vissza a főoldalra</a></p>
+    <main class="main-content">
+        <p><a href="index.html" class="back-link">&larr; Vissza a főoldalra</a></p>
 
-<section id="rolam">
-    <h1>Rólam</h1>
-    <img src="assets/images/profile.png" alt="Profile image of me" class="avatar">
-    <div class="container">
-        <div>
-            <h2>Bemutatkozás</h2>
-            <p>Czellecz Andrea-Julia vagyok, 22 éves, az UMFST informatikai karán tanulok.</p>
-        </div>
-        <div>
-            <h2>Érdeklődési körök</h2>
-            <p><span style="color: #4f0f66; font-weight: bold;">Érdeklődési köröm a programozás, kiberbiztonság és web-mobil appfejlesztés.</span>
-                <span style="color: #4f0f66; font-weight: bold;">Szeretek új technológiákat felfedezni és kreatív projekteken dolgozni.</span>
-            </p>
-        </div>
-    </div>
-    <h2>Képességek</h2>
-    <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-    </ul>
-</section>
+        <section class="card-section">
+            
+            <div class="about-header">
+                <img src="assets/images/profile.png" alt="Profilkép" class="avatar">
+                
+                <div class="about-intro">
+                    <h1>Rólam</h1>
+                    <h2>Bemutatkozás</h2>
+                    <p>Czellecz Andrea-Júlia vagyok, 22 éves, az UMFST, Petru Maior informatikai karán, magyar szakon tanulok.
+                     A célom, hogy valami újat tanuljak, és hozzájáruljak a technológiai fejlődéshez.</p>
+                    </p>
+                </div>
+            </div>
 
-<footer>
-    <p>Kapcsolat: andreaczellecz1234@gmail.com</p>
-    <p>&copy; 2026 Czellecz Andrea-Julia.Minden jog fenntartva.</p>
-</footer>
+            <div class="container">
+                <div>
+                    <h2>Érdeklődési körök</h2>
+                    <p>
+                        Érdeklődési köröm a programozás, a kiberbiztonság és a web-mobil appfejlesztés. 
+                        Szeretek új technológiákat felfedezni és kreatív projekteken dolgozni.
+                    </p>
+                </div>
 
+                <div>
+                    <h2>Képességek</h2>
+                    <ul class="skills-list">
+                        <li>Critical thinking</li>
+                        <li>Problem solving</li>
+                        <li>Good adaptability, learning new technologies fast</li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Kapcsolat: andreaczellecz1234@gmail.com</p>
+        <p>&copy; 2026 Czellecz Andrea-Julia. Minden jog fenntartva.</p>
+    </footer>
 </body>
 </html>
-

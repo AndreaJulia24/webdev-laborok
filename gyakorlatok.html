@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - JS Gyakorlatok</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="components.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="rolam.html">Rólam</a></li>
+                <li><a href="projektek.html">Projektek</a></li>
+                <li><a href="gyakorlatok.html" class="active">JS Gyakorlatok</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <p><a href="index.html">&larr; Vissza a főoldalra</a></p>
+
+        <section class="hero-card">
+            <h1>JavaScript Gyakorlatok</h1>
+            <p class="subtitle">Interaktív feladatok a DOM-manipulációtól a konzolos műveletekig.</p>
+        </section>
+
+        <!-- 1-5. és 9. Interaktív feladatok -->
+        <section class="js-section">
+            <h2>Konzolos és Interaktív Feladatok</h2>
+            <div class="interactive-grid">
+                
+                <!-- 1. Feladat -->
+                <div class="interactive-card">
+                    <h4>1. Két szám összeadása</h4>
+                    <p class="stat-text" style="color: #666; font-size: 0.85rem;"><code>add(3, 4)</code></p>
+                    <p id="addResult" class="stat-number">?</p>
+                    <button type="button" onclick="runAdd()">Összeadás (3 + 4)</button>
+                </div>
+
+                <!-- 2. Feladat -->
+                <div class="interactive-card">
+                    <h4>2. Páros vagy páratlan?</h4>
+                    <p class="stat-text" style="color: #666; font-size: 0.85rem;"><code>isEven(4) &amp; isEven(5)</code></p>
+                    <p id="isEvenResult" class="stat-text" style="font-weight: bold;">Kattints a teszthez!</p>
+                    <button type="button" onclick="runIsEven()">Ellenőrzés</button>
+                </div>
+
+                <!-- 3. Feladat -->
+                <div class="interactive-card">
+                    <h4>3. Számláló</h4>
+                    <p id="counter" class="stat-number">0</p>
+                    <button type="button" onclick="incrementCounter()">Növelés</button>
+                </div>
+
+                <!-- 4. Feladat -->
+                <div class="interactive-card">
+                    <h4>4. Név bekérése</h4>
+                    <p id="name" class="stat-text">Még nincs név megadva</p>
+                    <button type="button" onclick="askName()">Kérdezd meg a nevem</button>
+                </div>
+
+                <!-- 5. Feladat -->
+                <div class="interactive-card">
+                    <h4>5. Visszaszámláló</h4>
+                    <p id="countdown" class="stat-number countdown-highlight">10</p>
+                    <button type="button" onclick="startCountdown()">Indítás</button>
+                </div>
+
+                <!-- 9. Feladat -->
+                <div class="interactive-card">
+                    <h4>9. Háttérszín váltása</h4>
+                    <p class="stat-text">Kattints a színváltáshoz!</p>
+                    <button type="button" onclick="changeBg()"style="margin-bottom: 10px;">Háttér váltás</button>
+                    <button type="button" onclick="resetBg()">Visszaállítás</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 6. és 8. Lista és objektum elemek -->
+        <section class="js-section" style="margin-top: 24px;">
+            <h2>Adatmegjelenítés (6. és 8. feladat)</h2>
+            <div class="interactive-grid">
+                
+                <!-- 6. Feladat -->
+                <div class="interactive-card" style="text-align: left;">
+                    <h4>6. Gyümölcsök tömb:</h4>
+                    <ul id="fruitList" style="margin-top: 10px; padding-left: 20px;"></ul>
+                </div>
+
+                <!-- 8. Feladat -->
+                <div class="interactive-card" style="text-align: left;">
+                    <h4>8. Személy objektum adatai:</h4>
+                    <ul id="personInfo" style="margin-top: 10px; padding-left: 20px;"></ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Kapcsolat: andreaczellecz1234@gmail.com</p>
+        <p>&copy; 2026 Czellecz Andrea-Julia. Minden jog fenntartva.</p>
+    </footer>
+
+    <!-- JS csatolása a body legvégén -->
+    <script src="script.js"></script>
+</body>
+</html>

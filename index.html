@@ -1,51 +1,94 @@
 <!DOCTYPE html>
+<html lang="hu">
 <head>
-<title>Portfolio</title>
-<link rel="stylesheet" href="base.css">
-<link rel="stylesheet" href="components.css">
-<script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Főoldal</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="components.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <a href="index.html">Főoldal</a>
-                <a href="rolam.html">Rólam</a>
-                <a href="projektek.html">Projektek</a>
-                <a href="kapcsolat.html">Kapcsolat</a>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="rolam.html">Rólam</a></li>
+                <li><a href="projektek.html" class="active">Projektek</a></li>
+                <li><a href="gyakorlatok.html">JS Gyakorlatok</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
             </ul>
         </nav>
     </header>
 
-<h1 id="fooldal">Welcome to My portfolio!</h1>
+<main class="main-content">
+    <section class="hero-card">
+        <h1>Üdvözöllek a portfóliómon!</h1>
+        <p class="subtitle">
+            Fedezd fel a legutóbbi projektjeimet és informatikai tanulmányaimat!
+            Kövess végig a munkáimon, és nézd meg, hogyan tudok hozzájárulni a technológiai fejlődéshez.
+        </p>
 
-<aside>
-    <h3>Gyorslinkek a projekthez</h3>
-    <ul>
-        <li><a href="projektek.html">Ugras a projektekhez</a></li>
-        <li><a href="https://github.com/AndreaJulia24" target="_blank">GitHub profil</a></li>
-    </ul>
-</aside>
+        <!-- Kétoszlopos modern Flexbox rács -->
+        <div class="hero-columns">
+            
+            <!-- Bal kártya: Gyorslinkek -->
+            <aside class="hero-panel">
+                <div class="panel-header">
+                    <h3>Gyorslinkek a projektekhez</h3>
+                    <p>Közvetlen hivatkozások az eddigi kódtárakhoz és laborokhoz:</p>
+                </div>
+                <ul class="quick-links-list">
+                    <li>
+                        <a href="https://github.com/AndreaJulia24/CoffeeShop_App.git" target="_blank" rel="noopener noreferrer">
+                            Kávézó app forráskód
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/AndreaJulia24/ReadingTrackerApp.git" target="_blank" rel="noopener noreferrer">
+                            Olvasáskövető app forráskód
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/AndreaJulia24/dgaspc-redesign.git" target="_blank" rel="noopener noreferrer">
+                            DGASPC Redesign forráskód
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://andreajulia24.github.io/webdev-laborok/" target="_blank" rel="noopener noreferrer">
+                            Webfejlesztés laborok
+                        </a>
+                    </li>
+                </ul>
+            </aside>
 
-<button onclick="incrementCounter()">Növelés</button>
-<p id="counter">0</p>
+            <!-- Jobb kártya: Navigációs műveletek -->
+            <div class="hero-panel">
+                <div class="panel-header">
+                    <h3>Többet akarsz megtudni?</h3>
+                    <p>Válassz az alábbi lehetőségek közül a további részletekért:</p>
+                </div>
+                <div class="action-buttons">
+                    <a href="projektek.html" class="btn btn-primary">
+                        Ugrás a projektekhez &rarr;
+                    </a>
+                    <a href="rolam.html" class="btn btn-secondary">
+                        Ismerj meg jobban (Rólam)
+                    </a>
+                    <a href="https://github.com/AndreaJulia24" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        GitHub profil megnyitása
+                    </a>
+                </div>
+            </div>
 
-<button onclick="askName()">Kérdezd meg a nevét</button>
-<p id="name"></p>
+        </div>
+    </section>
+</main>
 
-<button onclick="startCountdown()">Indítsd el</button>
-<p id="countdown">10</p>
+    <footer>
+        <p>Kapcsolat: andreaczellecz1234@gmail.com</p>
+        <p>&copy; 2026 Czellecz Andrea-Julia. Minden jog fenntartva.</p>
+    </footer>
 
-<ul id="fruitList"></ul>
-
-<ul id="personInfo"></ul>
-
-<button onclick="changeBg()">Háttér váltás</button>
-
-<footer>
-    <p>Kapcsolat: andreaczellecz1234@gmail.com</p>
-    <p>&copy; 2026 Czellecz Andrea-Julia.Minden jog fenntartva.</p>
-</footer>
-
+    <script src="script.js"></script>
 </body>
 </html>

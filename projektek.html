@@ -1,63 +1,127 @@
 <!DOCTYPE html>
+<html lang="hu">
 <head>
-<title>Projektek</title>
-<link rel="stylesheet" href="base.css">
-<link rel="stylesheet" href="components.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Projektek</title>
+    <!-- CSS 13. feladat: mindkét fájl csatolása -->
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="components.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <a href="index.html">Főoldal</a>
-                <a href="rolam.html">Rólam</a>
-                <a href="projektek.html">Projektek</a>
-                <a href="kapcsolat.html">Kapcsolat</a>
+                <li><a href="index.html">Főoldal</a></li>
+                <li><a href="rolam.html">Rólam</a></li>
+                <li><a href="projektek.html" class="active">Projektek</a></li>
+                <li><a href="gyakorlatok.html">JS Gyakorlatok</a></li>
+                <li><a href="kapcsolat.html">Kapcsolat</a></li>
             </ul>
         </nav>
     </header>
 
-<p><a href="index.html">&larr; Vissza a főoldalra</a></p>
+    <main class="main-content">
+        <!-- 11. feladat: Vissza a főoldalra gomb -->
+        <p><a href="index.html" class="back-link">&larr; Vissza a főoldalra</a></p>
 
-<section id="Projektek">
-    <h2>Projektek</h2>
-    <table border="1">
-            <thead>
-                <tr>
-                    <th>Projekt neve</th>
-                    <th>Leírás</th>
-                    <th>Használt technológiák</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Portfólió oldal</td>
-                    <td>Egyéni bemutatkozó weboldal felépítése.</td>
-                    <td>HTML5</td>
-                </tr>
-                <tr>
-                    <td>Kávézó App</td>
-                    <td>Mobilalkalmazás kávérendelés kezelésére.</td>
-                    <td>Flutter, Dart</td>
-                </tr>
-            </tbody>
-        </table>
-</section>
+        <!-- Fejléc kártya -->
+        <section class="card-section">
+            <h1>Projektek</h1>
+            <p style="color: #64748b; margin-bottom: 0;">Az eddig elkészített egyetemi és egyéni fejlesztési munkáim összefoglalója.</p>
+        </section>
 
-<section id="galeria" class="grid">
-        <figure>
-            <img src="assets/images/labor1.png" alt="Portfólió projekt előnézet">
-            <figcaption>1. projekt: Egyéni portfólió oldal felülete</figcaption>
-        </figure>
-        <figure>
-            <img src="assets/images/labor2.png" alt="Kávézó App projekt előnézet">
-            <figcaption>2. projekt: Kávézó App felülete</figcaption>
-        </figure>
-    </section>
+        <!-- 6. feladat: Projekttáblázat -->
+        <section class="card-section">
+            <h2>Projekt áttekintés táblázat</h2>
+            <div class="table-container">
+                <table class="project-table">
+                    <thead>
+                        <tr>
+                            <th>Projekt neve</th>
+                            <th>Leírás</th>
+                            <th>Használt technológiák</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Portfólió oldal</strong></td>
+                            <td>Egyéni bemutatkozó weboldal felépítése reszponzív elrendezéssel és JavaScript feladatokkal.</td>
+                            <td>
+                                <span class="tech-badge">HTML5</span>
+                                <span class="tech-badge">CSS3</span>
+                                <span class="tech-badge">JavaScript</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Kávézó App</strong></td>
+                            <td>Mobilalkalmazás rendelések leadására, kosárkezelésre és Firebase szinkronizációra.</td>
+                            <td>
+                                <span class="tech-badge">Flutter</span>
+                                <span class="tech-badge">Dart</span>
+                                <span class="tech-badge">Firebase</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>Olvasáskövető App</strong></td>
+                            <td>Mobilalkalmazás könyvek nyomon követésére, olvasási statisztikák és felhasználói profilok kezelésére.</td>
+                            <td>
+                                <span class="tech-badge">Java</span>
+                                <span class="tech-badge">Netbeans</span>
+                                <span class="tech-badge">Java Swing</span>
+                                <span class="tech-badge">JSON</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><strong>DGASPC Redesign</strong></td>
+                            <td>Weboldal újratervezése modern UI/UX elvek alapján, reszponzív és felhasználóbarát felülettel.</td>
+                            <td>
+                                <span class="tech-badge">HTML5</span>
+                                <span class="tech-badge">CSS3</span>
+                                <span class="tech-badge">JavaScript</span>
+                                <span class="tech-badge">Bootstrap</span>
+                                <span class="tech-badge">PHP</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
 
+        <!-- 8. feladat: Képgaléria (CSS 11. Grid feladat alapján) -->
+        <section class="card-section">
+            <h2>Projekt galéria</h2>
+            <div class="grid">
+                <figure>
+                    <img src="assets/images/portfolio.png" alt="Portfólió oldal felülete">
+                    <figcaption>1. Portfólió oldal – Felhasználói felület</figcaption>
+                </figure>
+                <figure>
+                    <img src="assets/images/app.png" alt="Kávézó App felülete">
+                    <figcaption>2. Kávézó App – Mobil képernyők</figcaption>
+                </figure>
+            </div>
+        </section>
 
-<footer>
-    <p>Kapcsolat: andreaczellecz1234@gmail.com</p>
-    <p>&copy; 2026 Czellecz Andrea-Julia.Minden jog fenntartva.</p>
-</footer>
+        <!-- 9. feladat: Beágyazott videó (iframe) -->
+        <section class="card-section">
+            <h2>Bemutató videó</h2>
+            <div class="video-container">
+                <iframe 
+                    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+                    title="Projekt bemutató videó" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <!-- 12. feladat: Lábléc -->
+    <footer>
+        <p>Kapcsolat: andreaczellecz1234@gmail.com</p>
+        <p>&copy; 2026 Czellecz Andrea-Julia. Minden jog fenntartva.</p>
+    </footer>
 </body>
 </html>
